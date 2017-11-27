@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-header">
+    Add New Goal
+  </div>
+  <div class="card-block">
+    <form (submit)="addGoal()">
+      <div class="form-group">
+        <label for="name">Goal Title</label>
+        <input type="text" class="form-control" [(ngModel)]="name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="description">Goal Description</label>
+        <textarea class="form-control" [(ngModel)]="description" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="imageUrl">Goal Image Url</label>
+        <input type="text" class="form-control" [(ngModel)]="imageUrl" name="imageUrl">
+      </div>
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+  </div>
+</div>
